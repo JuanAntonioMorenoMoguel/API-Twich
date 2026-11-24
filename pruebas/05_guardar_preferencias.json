@@ -1,0 +1,33 @@
+{
+  "peticion": {
+    "metodo": "PUT",
+    "url": "/usuarios/1/preferencias",
+    "cuerpo": {
+      "streamers": [
+        "ibai",
+        "auronplay"
+      ],
+      "juegos": [
+        "Minecraft",
+        "League of Legends"
+      ],
+      "idiomas": [
+        "es"
+      ]
+    }
+  },
+  "codigo_http": 200,
+  "respuesta": {
+    "streamers": [
+      "ibai",
+      "auronplay"
+    ],
+    "juegos": [
+      "Minecraft",
+      "League of Legends"
+    ],
+    "idiomas": [
+      "es"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/twitch/juegos?nombre=Minecraft",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": {
+    "id": "27471",
+    "nombre": "Minecraft",
+    "caratula": "https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg",
+    "top_directos": [
+      {
+        "streamer": "PWGood",
+        "espectadores": 2436
+      },
+      {
+        "streamer": "Dimeax",
+        "espectadores": 998
+      },
+      {
+        "streamer": "Skycrab",
+        "espectadores": 574
+      }
+    ]
+  },
+  "cabeceras": {
+    "date": "Sat, 21 Nov 2026 14:34:39 GMT",
+    "server": "uvicorn",
+    "content-length": "253",
+    "content-type": "application/json",
+    "cache-control": "public, max-age=300"
+  }
+}

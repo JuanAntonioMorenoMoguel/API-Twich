@@ -1,0 +1,86 @@
+newman
+
+API Usuarios y Streamers
+
+□ Usuarios
+└ Crear usuario
+  POST http://127.0.0.1:8000/usuarios [201 Created, 460B, 308ms]
+  √  Código 201
+  √  Incluye enlaces
+
+└ Crear usuario inválido
+  POST http://127.0.0.1:8000/usuarios [422 Unprocessable Entity, 625B, 39ms]
+  √  Código 422
+
+└ Listar usuarios
+  GET http://127.0.0.1:8000/usuarios [200 OK, 457B, 14ms]
+  √  Código 200
+
+└ Obtener usuario
+  GET http://127.0.0.1:8000/usuarios/1 [200 OK, 455B, 5ms]
+  √  Código 200
+
+└ Actualizar usuario
+  PUT http://127.0.0.1:8000/usuarios/1 [200 OK, 455B, 16ms]
+  √  Código 200
+  √  Edad actualizada
+
+└ Guardar preferencias
+  PUT http://127.0.0.1:8000/usuarios/1/preferencias [200 OK, 219B, 17ms]
+  √  Código 200
+
+└ Ver preferencias
+  GET http://127.0.0.1:8000/usuarios/1/preferencias [200 OK, 219B, 11ms]
+  √  Código 200
+
+└ Ver favoritos (Twitch)
+  GET http://127.0.0.1:8000/usuarios/1/favoritos [200 OK, 1.29kB, 4.5s]
+  √  Código 200
+  √  Trae streamers
+
+□ Twitch
+└ Buscar canales
+  GET http://127.0.0.1:8000/twitch/buscar?q=ibai&limite=3 [200 OK, 782B, 491ms]
+  √  Código 200
+  √  Cabecera Cache-Control
+
+└ Ver streamer
+  GET http://127.0.0.1:8000/twitch/streamers/ibai [200 OK, 467B, 10ms]
+  √  Código 200
+
+└ Ver juego
+  GET http://127.0.0.1:8000/twitch/juegos?nombre=Minecraft [200 OK, 421B, 2ms]
+  √  Código 200
+
+└ Streamer inexistente
+  GET http://127.0.0.1:8000/twitch/streamers/noexiste_zz9999 [404 Not Found, 177B, 488ms]
+  √  Código 404
+
+□ Limpieza
+└ Eliminar usuario
+  DELETE http://127.0.0.1:8000/usuarios/1 [200 OK, 156B, 13ms]
+  √  Código 200
+
+└ Usuario eliminado ya no existe
+  GET http://127.0.0.1:8000/usuarios/1 [404 Not Found, 166B, 14ms]
+  √  Código 404
+
+┌─────────────────────────┬────────────────────┬───────────────────┐
+│                         │           executed │            failed │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              iterations │                  1 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│                requests │                 14 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│            test-scripts │                 14 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│      prerequest-scripts │                  0 │                 0 │
+├─────────────────────────┼────────────────────┼───────────────────┤
+│              assertions │                 18 │                 0 │
+├─────────────────────────┴────────────────────┴───────────────────┤
+│ total run duration: 7.1s                                         │
+├──────────────────────────────────────────────────────────────────┤
+│ total data received: 4.45kB (approx)                             │
+├──────────────────────────────────────────────────────────────────┤
+│ average response time: 427ms [min: 2ms, max: 4.5s, s.d.: 1157ms] │
+└──────────────────────────────────────────────────────────────────┘

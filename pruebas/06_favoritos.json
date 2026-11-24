@@ -1,0 +1,77 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/usuarios/1/favoritos",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": {
+    "streamers": [
+      {
+        "login": "ibai",
+        "nombre": "ibai",
+        "descripcion": "Si lees esto que sepas que te aprecio",
+        "tipo": "partner",
+        "imagen": "https://static-cdn.jtvnw.net/jtv_user_pictures/574228be-01ef-4eab-bc0e-a4f6b68bedba-profile_image-300x300.png",
+        "creado": "2015-02-20T16:47:56Z",
+        "url": "https://www.twitch.tv/ibai",
+        "directo": null
+      },
+      {
+        "login": "auronplay",
+        "nombre": "auronplay",
+        "descripcion": "feliz pero no mucho ",
+        "tipo": "partner",
+        "imagen": "https://static-cdn.jtvnw.net/jtv_user_pictures/1165c917-6c34-4179-8d24-8667f59eb179-profile_image-300x300.png",
+        "creado": "2019-09-03T14:02:49Z",
+        "url": "https://www.twitch.tv/auronplay",
+        "directo": {
+          "titulo": "🚨 !DROPS ON 🌴 GTA VI INJUGABLE 🌴 LO DIGO Y ME DOY EL LUJAZO *Lo funan*",
+          "juego": "Just Chatting",
+          "espectadores": 28474,
+          "inicio": "2026-11-21T14:01:23Z"
+        }
+      }
+    ],
+    "juegos": [
+      {
+        "id": "27471",
+        "nombre": "Minecraft",
+        "caratula": "https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg",
+        "top_directos": [
+          {
+            "streamer": "PWGood",
+            "espectadores": 2436
+          },
+          {
+            "streamer": "Dimeax",
+            "espectadores": 998
+          },
+          {
+            "streamer": "Skycrab",
+            "espectadores": 574
+          }
+        ]
+      },
+      {
+        "id": "21779",
+        "nombre": "League of Legends",
+        "caratula": "https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg",
+        "top_directos": [
+          {
+            "streamer": "krokoboss",
+            "espectadores": 5985
+          },
+          {
+            "streamer": "神楽めあ",
+            "espectadores": 5125
+          },
+          {
+            "streamer": "Alois_NL",
+            "espectadores": 3141
+          }
+        ]
+      }
+    ]
+  }
+}

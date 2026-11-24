@@ -1,0 +1,25 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/twitch/streamers/ibai",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": {
+    "login": "ibai",
+    "nombre": "ibai",
+    "descripcion": "Si lees esto que sepas que te aprecio",
+    "tipo": "partner",
+    "imagen": "https://static-cdn.jtvnw.net/jtv_user_pictures/574228be-01ef-4eab-bc0e-a4f6b68bedba-profile_image-300x300.png",
+    "creado": "2015-02-20T16:47:56Z",
+    "url": "https://www.twitch.tv/ibai",
+    "directo": null
+  },
+  "cabeceras": {
+    "date": "Sat, 21 Nov 2026 14:34:39 GMT",
+    "server": "uvicorn",
+    "content-length": "306",
+    "content-type": "application/json",
+    "cache-control": "public, max-age=60"
+  }
+}

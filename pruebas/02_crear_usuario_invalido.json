@@ -1,0 +1,52 @@
+{
+  "peticion": {
+    "metodo": "POST",
+    "url": "/usuarios",
+    "cuerpo": {
+      "nombre": "J",
+      "email": "sinarroba",
+      "edad": 200
+    }
+  },
+  "codigo_http": 422,
+  "respuesta": {
+    "detail": [
+      {
+        "type": "string_too_short",
+        "loc": [
+          "body",
+          "nombre"
+        ],
+        "msg": "String should have at least 2 characters",
+        "input": "J",
+        "ctx": {
+          "min_length": 2
+        }
+      },
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "email"
+        ],
+        "msg": "value is not a valid email address: An email address must have an @-sign.",
+        "input": "sinarroba",
+        "ctx": {
+          "reason": "An email address must have an @-sign."
+        }
+      },
+      {
+        "type": "less_than_equal",
+        "loc": [
+          "body",
+          "edad"
+        ],
+        "msg": "Input should be less than or equal to 120",
+        "input": 200,
+        "ctx": {
+          "le": 120
+        }
+      }
+    ]
+  }
+}

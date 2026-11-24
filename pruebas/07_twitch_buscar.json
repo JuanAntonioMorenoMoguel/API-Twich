@@ -1,0 +1,41 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/twitch/buscar?q=ibai&limite=3",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": [
+    {
+      "login": "ibai",
+      "nombre": "ibai",
+      "en_directo": false,
+      "juego": "League of Legends",
+      "titulo": "GRAN FINAL DE WORLDS | GENG vs BLG | EL PARTIDO DEL AÑO | #WORLDS2026",
+      "idioma": "es"
+    },
+    {
+      "login": "ibaistream",
+      "nombre": "ibaiSTREAM",
+      "en_directo": false,
+      "juego": "Just Chatting",
+      "titulo": "🔴Sala de espera de ibai VEN y únete a nosotros 🔴 Disfruta de los streams de ibai",
+      "idioma": "es"
+    },
+    {
+      "login": "ibaiap",
+      "nombre": "ibaiAP",
+      "en_directo": false,
+      "juego": "Just Chatting",
+      "titulo": "⚽️ REAL MADRID - BETIS⚽️ 🔴⚫️ REACCIONANDO AL PARTIDO🔴⚫️❗REDES❗TIKTOK❗PANCHONETA ❗️LigaDeCreadores 🏝️",
+      "idioma": "es"
+    }
+  ],
+  "cabeceras": {
+    "date": "Sat, 21 Nov 2026 14:34:38 GMT",
+    "server": "uvicorn",
+    "content-length": "621",
+    "content-type": "application/json",
+    "cache-control": "public, max-age=60"
+  }
+}

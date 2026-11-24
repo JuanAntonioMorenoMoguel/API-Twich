@@ -1,0 +1,11 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/twitch/streamers/noexiste_zz9999",
+    "cuerpo": null
+  },
+  "codigo_http": 404,
+  "respuesta": {
+    "detail": "Streamer no encontrado en Twitch"
+  }
+}

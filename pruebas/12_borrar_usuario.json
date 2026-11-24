@@ -1,0 +1,11 @@
+{
+  "peticion": {
+    "metodo": "DELETE",
+    "url": "/usuarios/1",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": {
+    "mensaje": "Usuario eliminado"
+  }
+}

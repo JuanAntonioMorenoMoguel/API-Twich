@@ -1,0 +1,34 @@
+{
+  "peticion": {
+    "metodo": "GET",
+    "url": "/usuarios",
+    "cuerpo": null
+  },
+  "codigo_http": 200,
+  "respuesta": [
+    {
+      "nombre": "Juan",
+      "email": "juan@correo.com",
+      "edad": 24,
+      "id": 1,
+      "preferencias": {
+        "streamers": [],
+        "juegos": [],
+        "idiomas": []
+      },
+      "enlaces": {
+        "self": "/usuarios/1",
+        "preferencias": "/usuarios/1/preferencias",
+        "favoritos": "/usuarios/1/favoritos",
+        "actualizar": {
+          "metodo": "PUT",
+          "url": "/usuarios/1"
+        },
+        "eliminar": {
+          "metodo": "DELETE",
+          "url": "/usuarios/1"
+        }
+      }
+    }
+  ]
+}
